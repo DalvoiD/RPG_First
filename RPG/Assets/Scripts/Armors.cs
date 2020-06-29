@@ -4,23 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Inventory : MonoBehaviour, IPointerClickHandler
+public class Armors : MonoBehaviour, IPointerClickHandler
 {
-    private GameObject InventoryRef;
+    private GameObject ArmorsRef;
 
-    public bool inventoryOpened = false;
+    public bool armorsOpened = false;
 
     void Start()
     {
-        InventoryRef = GameObject.Find("Inventory");
-        InventoryRef.SetActive(false);
+        ArmorsRef = GameObject.Find("Armors");
+        ArmorsRef.SetActive(false);
     }
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.I))
+        if (Input.GetKeyUp(KeyCode.R))
         {
-            if (!inventoryOpened)
+            if (!armorsOpened)
             {
                 OpenInvetory();
             }
@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!inventoryOpened)
+        if (!armorsOpened)
         {
             OpenInvetory();
         }
@@ -45,13 +45,13 @@ public class Inventory : MonoBehaviour, IPointerClickHandler
 
     public void OpenInvetory()
     {
-        InventoryRef.SetActive(true);
-        inventoryOpened = true;
+        ArmorsRef.SetActive(true);
+        armorsOpened = true;
     }
 
     public void CloseInvetory()
     {
-        InventoryRef.SetActive(false);
-        inventoryOpened = false;
+        ArmorsRef.SetActive(false);
+        armorsOpened = false;
     }
 }
