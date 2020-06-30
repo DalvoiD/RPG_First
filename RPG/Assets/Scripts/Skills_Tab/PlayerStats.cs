@@ -11,11 +11,11 @@ public class PlayerStats : MonoBehaviour
     public Text Prot;
     public Text Atak;
 
-    private int _stran;
-    private int _agil;
-    private int _intel;
-    private int _prot;
-    private int _atak;
+    private int _stran = 1;
+    private int _agil = 1;
+    private int _intel = 1;
+    private int _prot = 1;
+    private int _atak = 1;
 
     // Start is called before the first frame update
     void Start()
