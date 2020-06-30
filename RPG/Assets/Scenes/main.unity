@@ -2655,7 +2655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2x2=7
+  m_Text: 2 x 2 = 7
 --- !u!222 &1731953763
 CanvasRenderer:
   m_ObjectHideFlags: 0
