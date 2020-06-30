@@ -13,7 +13,7 @@ public class Armors : MonoBehaviour, IPointerClickHandler
     void Start()
     {
         ArmorsRef = GameObject.Find("Armors");
-        ArmorsRef.SetActive(false);
+        ArmorsRef.SetActive(false); 
     }
 
     void Update()
